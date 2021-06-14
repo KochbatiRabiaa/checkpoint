@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet"
+        href=https://drive.google.com/file/d/0B39Rux7podF4eWszdFJ6cjJoV2hVYWY2WHlnVG5tYlh2Ulpr/view?resourcekey=0-tf_6JhEzwV4sjyWcEfoMXA"">
+    <style>
+        /*NavBare style*/
+
+        .NavBar ul li {
+            display: inline;
+
+            font-style: oblique;
+
+        }
+
+        .NavBar ul li a {
+            text-decoration: none;
+            color: rgb(56, 50, 50);
+            padding: 8px 25px;
+            transition: all .5s ease;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+                "Lucida Sans", Arial, sans-serif;
+            font-weight: bolder;
+
+        }
+
+        .NavBar ul li a:hover {
+            background-color: rgb(59, 52, 52);
+            color: black;
+
+        }
+
+        /* Home style*/
+        .Intro {
+            background-image: url("../CSSCOURS/IMG/photos\ huwawei\ 001.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0 0;
+            width: auto;
+            height: 500px;
+            z-index: -1;
+            opacity: .8;
+            float: center;
+            overflow: hidden;
+
+        }
+
+
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+
+        }
+
+        h3 {
+            font-size: 25px;
+            font-weight: 500;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            padding-bottom: 30%;
+
+        }
+
+        /*About Me style*/
+        .about {
+            background-image: url('../CSSCOURS/IMG/img3.jpg');
+            background-size: 50%;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-color: rgba(245, 244, 241, 0.904);
+            margin-top: 0 0;
+            float: right;
+            z-index: -1;
+            opacity: .9;
+        }
+
+        .about h1 {
+            display: inline;
+            text-align: right/start;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(13, 14, 13);
+
+        }
+
+        textarea {
+            text-align: center;
+            float: right;
+
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(13, 14, 13);
+            background-color: rgba(245, 244, 241, 0.904);
+            border-radius: 10px;
+
+            border-color: rgb(61, 57, 55);
+            border-width: thick;
+            display: inline;
+
+
+        }
+
+        /*Work style*/
+        .Work {
+            padding: 10px;
+            margin: 0 0;
+            background-image: url('../CSSCOURS/IMG/img4.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+            z-index: -1;
+            opacity: .9;
+        }
+
+        h2 {
+
+            text-align: center;
+            font-size: 45px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            float: inline-start;
+        }
+
+        .Work td {
+            text-align: center;
+            padding: 30px;
+            font-size: 25spx;
+            font-family: sans-serif;
+            background-color: rgba(184, 53, 36, 0.952);
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+
+        }
+
+        th {
+            text-align: center;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 10px;
+        }
+
+        table {
+            display: inline;
+            float: center;
+        }
+
+
+
+        /*Resume style*/
+        .btn {
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+
+        .btn:hover {
+            background-color: rgb(44, 51, 73);
+        }
+
+        p {
+            font: bold;
+            font-size: 20px;
+            text-align: justify;
+            text-decoration: none;
+        }
+
+
+        /*Contact style*/
+        #Contact {
+            margin-top: 0px;
+            background-color: rgb(61, 57, 55);
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0px;
+            align-items: center;
+        }
+
+        .input {
+            padding: 5px;
+            margin: 15px;
+            width: 30%;
+            border: none;
+            outline: none;
+
+        }
+
+        #msg {
+            margin: 15px;
+            padding: 10px;
+            width: 20%;
+            border: none;
+            outline: none;
+
+        }
+
+        #send {
+            margin: 40px;
+            padding: 10px;
+            width: 10%;
+            border: none;
+            outline: none;
+        }
+
+        #send :hover {
+            cursor: pointer;
+            box-shadow: 0 0 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="background-color: #dad8d2">
+    <div style="width: 100%; background-color:black; display: inline-block;">
+        <nav class="NavBar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About Me">About Me</a></li>
+                <li><a href="#Work">Work</a></li>
+                <li><a href="#Resume">Resume</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="Intro" id="Home">
+
+        <h1>Im kochbati Rabiaa </h1>
+        <h3>Im a writer and devlopper</h3>
+    </section>
+
+    <div class="about" id="About Me">
+        <h1>About me</h1>
+        <textarea name="Aboutme" cols="50" rows="10">
+                Hello world,
+                my name is kochbati Rabiaa.i have a master degree in analytic chemestry. However Im more an
+                artist than a scientist.
+                I write articles and creative contents besides my passion about web design when i can
+                get you any appearence you wanna have. And That's why you read this now.
+            </textarea>
+    </div>
+
+
+    <section class="Work" id="Work">
+        <h2>Work</h2>
+        <table>
+            <tr>
+                <th class="title">Web Developpment</th>
+                <th class="title">writer </th>
+
+            </tr>
+
+            <tr>
+                <td>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nulla necessitatibus quae facilis
+                    voluptatem minus in aliquam quibusdam ipsum inventore ducimus modi, expedita et maiores qui amet
+                    perspiciatis quo aliquid?
+                </td>
+                <td>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nulla necessitatibus quae facilis
+                    voluptatem minus in aliquam quibusdam ipsum inventore ducimus modi, expedita et maiores qui amet
+                    perspiciatis quo aliquid?
+                </td>
+            </tr>
+
+
+        </table>
+    </section>
+    <section class="Resume" id="Resume">
+        <video width="320" height="240" controls>
+            <source src="video2.mp4" type="video/mp4">
+        </video>
+        <h1> Resume </h1>
+        <p> you will have every information you need aboout me when you click on the botton("Download)</p>
+        <form class="btn" >
+            <a   href="Rabiaa_Resume.pdf" target="_blank">
+
+                <input type="button" value="Download Resume">
+                </input>
+    
+            </a>
+        </form>
+
+
+    </section>
+    <section id="Contact">
+        <h1>Contact</h1>
+        <form>
+            <input type="text" name="name" class="input" placeholder="enter you name">
+            <input type="email" name="email" class="input" placeholder="enter you email">
+            <textarea name="msg" id="msg" cols="50" rows="10"></textarea>
+            <input type="submit" value="Send" id="send">
+        </form>
+    </section>
+
+
+</body>
+
+</html>
